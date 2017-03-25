@@ -4,7 +4,7 @@
 ## Introducción
 
 Esta librería hace de interfaz para trabajar con rutas amigables cuando todo se 
-redirecciona a "index.php" de la página.
+redirecciona a "index.php" en la página.
 
 La idea es modificarla mas adelante para integrarla con frameworks como laravel
 de modo que las librerías que tengan que consultar algún aspecto de la url sean
