@@ -41,12 +41,12 @@ Ready, you can use the library now.
 If you do not use composer (not recommended), you just have to download
 and add the include, see sample:
 
-`
+```
 #!php
 <?php
 require_once "PATH/TO/LIBRARY/custom_loader.php"
 $_iMiRouter = new \VZenix\Router\Router::GetInstance();
-`
+```
 
 ## Web server configuration
 
@@ -55,7 +55,7 @@ content to your application.
 
 Examples extracted from the laravel framework
 
-`
+```
 #!Apache
 # .htaccess
 <IfModule mod_rewrite.c>
@@ -78,9 +78,9 @@ Examples extracted from the laravel framework
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
-`
+```
 
-`
+```
 #!IIS
 # web.config
 <configuration>
@@ -106,13 +106,13 @@ Examples extracted from the laravel framework
     </rewrite>
   </system.webServer>
 </configuration>
-`
+```
 
 ## Examples of use
 
 Example 1: Reading URL
 
-`
+```
 #!php
 <?php
 // test_router.php
@@ -127,11 +127,11 @@ $_iMiRouter->getPosition(0);
 // If the URL has the value "/agenda/calendario/2" return "calendario"
 $_iMiRouter->setInitPosition(1);
 $_iMiRouter->getPosition(0);
-`
+```
 
 Example 2: http redirects
 
-`
+```
 #!php
 <?php
 // test_redirection.php
@@ -143,7 +143,7 @@ Example 2: http redirects
 // Redirection Example 304
 \VZenix\Router\Router::Redirect(304);
 \VZenix\Router\Router::Redirect(\VZenix\Router\Router::REDIRECT_NOT_MODIFIED);
-`
+```
 
 ## Licency
 
