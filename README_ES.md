@@ -18,21 +18,21 @@ e infórmate.
 
 Crea el archivo "composer.json" con la siguiente estructura
 
-`
+```
 #!json
 {"require": {"vzenix/router": "0.1.*"}}
-`
+```
 
 A contunuación ejecuta composer con las instrucciones de instalación
 
-`
+```
 #!shell
 # si estás creando el proyecto
 composer install 
 
 # si ya tenías el proyecto creado y estás añadiendo la librería
 composer update 
-`
+```
 
 Listo, ya puedes usar la librería en tu proyecto.
 
@@ -41,12 +41,12 @@ Listo, ya puedes usar la librería en tu proyecto.
 Si no usas composer (algo que desaconsejamos), Solo tienes que descargar 
 el código y añadirlo de la siguiente forma:
 
-`
+```
 #!php
 <?php
 require_once "PATH/TO/LIBRARY/custom_loader.php"
 $_iMiRouter = new \VZenix\Router\Router::GetInstance();
-`
+```
 
 ## Configuración del servidor web
 
@@ -55,7 +55,7 @@ para redireccionar contenido a tu aplicación.
 
 Ejemplos extraidos del framework laravel
 
-`
+```
 #!Apache
 # .htaccess
 <IfModule mod_rewrite.c>
@@ -78,9 +78,9 @@ Ejemplos extraidos del framework laravel
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
-`
+```
 
-`
+```
 #!IIS
 # web.config
 <configuration>
@@ -106,13 +106,13 @@ Ejemplos extraidos del framework laravel
     </rewrite>
   </system.webServer>
 </configuration>
-`
+```
 
 ## Ejemplos de uso
 
 Ejemplo 1: Lectura de la URL
 
-`
+```
 #!php
 <?php
 // test_router.php
@@ -127,11 +127,11 @@ $_iMiRouter->getPosition(0);
 // Si la URL tiene el valor "/agenda/calendario/2" retorna "calendario"
 $_iMiRouter->setInitPosition(1);
 $_iMiRouter->getPosition(0);
-`
+```
 
 Ejemplo 2: Redirecciones http
 
-`
+```
 #!php
 <?php
 // test_redirection.php
@@ -143,7 +143,7 @@ Ejemplo 2: Redirecciones http
 // Ejemplo de redirección 304
 \VZenix\Router\Router::Redirect(304);
 \VZenix\Router\Router::Redirect(\VZenix\Router\Router::REDIRECT_NOT_MODIFIED);
-`
+```
 
 ## Licencia
 
