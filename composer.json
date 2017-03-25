@@ -1,0 +1,33 @@
+{
+    "name": "vzenix/router",
+    "description": "Simple router library for URI path",
+    "keywords": ["vzenix", "router"],
+    "type": "library",
+    "homepage": "http://libraries.vzenix.es/en/router/",
+    "license": "GNU General Public License v3",
+    "authors": [
+        {
+            "name": "Francisco Muros Espadas",
+            "email": "paco@vzenix.es",
+            "homepage": "http://vzenix.es/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "library.router@vzenix.es"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vzenix/router"
+        }
+    ]
+}

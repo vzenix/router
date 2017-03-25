@@ -1,2 +1,4 @@
-# router
-Simple router library for php
+# Idiomas / Languages
+
+* [Español](README_ES.md)
+* [English](README_EN.md)
