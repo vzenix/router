@@ -4,7 +4,7 @@
     "keywords": ["vzenix", "router"],
     "type": "library",
     "homepage": "http://libraries.vzenix.es/en/router/",
-    "license": "GNU General Public License v3",
+    "license": "CC-BY-NC-4.0",
     "authors": [
         {
             "name": "Francisco Muros Espadas",
